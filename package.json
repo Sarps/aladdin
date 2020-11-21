@@ -1,0 +1,26 @@
+{
+    "name": "aladdin",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+        "@esentri/de-serializer": "^0.9.9",
+        "@slack/web-api": "^5.13.0",
+        "dotenv": "^8.2.0",
+        "edge.js": "^1.1.4",
+        "express": "^4.17.1",
+        "glob": "^7.1.6",
+        "indicative": "^7.4.4",
+        "lex": "^1.7.9",
+        "schema-validator": "^3.3.1",
+        "yargs": "^16.1.1"
+    },
+    "devDependencies": {
+        "@types/node": "*",
+        "chalk": "^4.1.0"
+    },
+    "scripts": {
+        "watch": "nodemon index.js --port 3000",
+        "tunnel": "ngrok http 3000"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "version": "1.0.0",
+    "tpl": [
+        {
+            "type": "snippet",
+            "template": "@if(username)\n  <h1> Hello {{ username }} </h1>\n@else\n  <h1> Hello anonymous </h1>\n@endif"
+        },
+        {
+            "type": "file",
+            "template": "",
+            "location": ""
+        }
+    ],
+    "schema": {
+        "username": "required|string"
+    }
+}
