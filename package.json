@@ -21,6 +21,7 @@
     },
     "scripts": {
         "watch": "nodemon index.js --port 3000",
-        "tunnel": "ngrok http 3000"
+        "tunnel": "ngrok http 3000",
+        "start": "node ."
     }
 }
