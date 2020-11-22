@@ -11,7 +11,18 @@
             "location": ""
         }
     ],
-    "schema": {
-        "username": "required|string"
-    }
+    "schema": [
+        {
+            "type": "select",
+            "items": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+            "multiple": false,
+            "name": "method",
+            "rule": "required|string|in:GET,POST,PUT,PATCH,DELETE"
+        },
+        {
+            "type": "text",
+            "name": "username",
+            "rule": "required|string"
+        }
+    ]
 }
